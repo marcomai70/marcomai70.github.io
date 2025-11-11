@@ -97,6 +97,49 @@
   margin-right: 5px;
 }
 
+/* Container do CV - lado esquerdo */
+#cv-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border-color);
+}
+
+#cv-container ion-icon,
+#cv-container a {
+  flex: 1 1 0;
+}
+
+#cv-container a {
+  color: var(--main-text-color);
+  text-decoration: none;
+  background-color: rgb(18, 135, 182);
+  border: 2px solid var(--main-color);
+  border-radius: 5px;
+  padding: 12px 20px;
+  font-weight: bold;
+  transition: all 0.5s;
+  max-width: 200px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+#cv-container a:hover {
+  background-color: transparent;
+  color: var(--main-color);
+}
+
+#cv-container ion-icon {
+  color: var(--main-text-color);
+  font-size: 20px;
+  margin-right: 5px;
+}
+
 /* Conteúdo principal */
 #about-container {
   flex: 1 1 80%;
@@ -138,6 +181,32 @@
 }
 #btn-projects:hover {
   background-color: transparent;
+}
+
+/* Botão do CV na seção principal */
+#btn-cv {
+  font-weight: bold;
+  font-size: 16px;
+  color: var(--main-text-color);
+  background-color: rgb(18, 135, 182);
+  border: 2px solid var(--main-color);
+  border-radius: 5px;
+  text-decoration: none;
+  transition: 0.5s;
+  margin: 25px 0;
+  padding: 12px 20px;
+  width: 200px;
+  text-align: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-left: 15px;
+}
+
+#btn-cv:hover {
+  background-color: transparent;
+  color: var(--main-color);
 }
 
 /* Skills */
@@ -210,9 +279,23 @@
   #btn-projects {
     margin: 20px auto;
   }
+  #btn-cv {
+    margin: 15px auto;
+    width: 180px;
+    display: flex;
+  }
   .skills-box {
     flex: 1 1 100%;
     max-width: 100%;
     margin-bottom: 40px;
   }
+  #cv-container {
+    margin-top: 1rem;
+    padding-top: 1rem;
+  }
+  #cv-container a {
+    max-width: 180px;
+    padding: 10px 15px;
+  }
 }
+

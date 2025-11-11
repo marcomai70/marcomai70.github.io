@@ -42,12 +42,19 @@
           </a>
         </li>
       </ul>
-
+      
+      <!-- Container do Email -->
       <div id="email-container">
         <ion-icon name="mail-outline"></ion-icon>
         <a href="mailto:bateramarcomai@hotmail.com">bateramarcomai@hotmail.com</a>
       </div>
-    </aside>
+
+      <!-- Container do CV -->
+      <div id="cv-container">
+        <ion-icon name="document-text-outline"></ion-icon>
+        <a href="docs/CURRICULUM25_TI.pdf" target="_blank" download="Marcos_Maia_CV.pdf">Meu CV</a>
+      </div>
+    </aside> <!-- FECHAMENTO CORRETO DO ASIDE -->
 
     <section id="about-container">
       <h1 id="name">Marcos Maia</h1>
@@ -60,7 +67,7 @@
       </p>
 
       <p class="description">
-        Especialista em <span class="highlight">garantia de qualidade end-to-end</span>, desenvolvimento de planos de teste e automação.
+        Especialista em <span class="highlight">garantia de qualidade end-to-end</span>, desenvolvimento de planos de teste e automação Cypress.
         Domínio em testes <span class="highlight">funcionais, não-funcionais e de performance (JMeter)</span>,
         com foco em <span class="highlight">qualidade contínua</span> e entregas que superam expectativas.
       </p>
@@ -69,6 +76,8 @@
         <ion-icon name="share-social-outline"></ion-icon>
         <span>Ver Projetos</span>
       </a>
+
+      
 
       <h2 id="skills-section-title">Minhas Skills</h2>
       <p class="description">Conheça as tecnologias que domino:</p>
@@ -115,7 +124,7 @@
         </div>
       </div>
 
-      <!-- NOVA SEÇÃO DE PROJETOS -->
+      <!-- SEÇÃO DE PROJETOS -->
       <section id="projects-section">
         <h2 id="projects-title">Projetos no GitHub</h2>
         <div class="project-box">
@@ -127,4 +136,16 @@
 
   <!-- Ícones -->
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@7.
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+  <!-- JavaScript -->
+  <script>
+    // Rolagem suave até os projetos
+    document.querySelector('#btn-projects').addEventListener('click', (e) => {
+      e.preventDefault();
+      const target = document.querySelector('#projects-section');
+      target.scrollIntoView({ behavior: 'smooth' });
+    });
+  </script>
+</body>
+</html>
